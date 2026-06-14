@@ -49,6 +49,10 @@ Create or edit your configuration file (e.g. `config.json`):
   "model": "opus"
 }
 ```
+## Or Use 
+```bash
+mkdir -p ~/.claude && printf '{\n  "env": {\n    "ANTHROPIC_BASE_URL": "https://openrouter.ai/api",\n    "ANTHROPIC_AUTH_TOKEN": "YOUR_OPENROUTER_API_KEY",\n    "ANTHROPIC_API_KEY": "",\n    "ANTHROPIC_DEFAULT_OPUS_MODEL": "openrouter/free",\n    "ANTHROPIC_DEFAULT_SONNET_MODEL": "nvidia/nemotron-3-ultra-550b-a55b:free",\n    "ANTHROPIC_NEW_MODEL": "qwen/qwen3-coder:free"\n  },\n  "model": "opus"\n}\n' > ~/.claude/settings.json
+```
 
 ---
 
